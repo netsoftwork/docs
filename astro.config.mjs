@@ -11,7 +11,7 @@ export default defineConfig({
                 src: './src/assets/favicon.webp',
                 replacesTitle: true,
             },
-            social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+            social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/fishstrap/fishstrap' }],
             customCss: [
               './src/css/custom.css',
             ],
