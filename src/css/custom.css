@@ -1,0 +1,31 @@
+@layer base, starlight, theme, components, utilities;
+
+:root {
+    --sl-color-accent-low: #0c2c45;
+    --sl-color-accent: #1a99dd;
+    --sl-color-accent-high: #bee3f9;
+    
+    --sl-color-bg: #1b1b1b;
+    --sl-color-bg-nav: #111111;
+    --sl-color-bg-sidebar: #141414;
+    
+    --sl-color-text: #eeeeee;
+    --sl-color-text-accent: #1a99dd;
+    
+    /** REFERENCE, NOT ACTUALLY USED BY ANYTHING **/
+    --color-astronaut-blue-50: #f1f8fe;
+    --color-astronaut-blue-100: #e2f1fc;
+    --color-astronaut-blue-200: #bee3f9;
+    --color-astronaut-blue-300: #84cdf5;
+    --color-astronaut-blue-400: #42b2ee;
+    --color-astronaut-blue-500: #1a99dd;
+    --color-astronaut-blue-600: #0d7abc;
+    --color-astronaut-blue-700: #0c6198;
+    --color-astronaut-blue-800: #0e537e;
+    --color-astronaut-blue-900: #114467;
+    --color-astronaut-blue-950: #0c2c45;
+}
+
+.hero img {
+    width: 550px;
+}
