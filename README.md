@@ -14,7 +14,7 @@ If you don't know how to send in a pr, just ask return or any of the other autis
     - [ ] Introduction to Fishstrap
     - [ ] Modding (@GoingCrazyDude)
     - [ ] FastFlags (Studio)
-    - [ ] FastFlags (Client)
+    - [ ] FastFlags (Client) (@Skylan031)
     - [ ] GlobalBasicSettings (@GoingCrazyDude)
     - [ ] Appearance
     - [ ] Integrations
