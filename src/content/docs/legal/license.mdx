@@ -1,0 +1,39 @@
+---
+title: License
+description: License information for the Fishstrap project and its dependencies.
+---
+
+import { Code } from '@astrojs/starlight/components';
+
+export const packages = [
+  { name: 'Fishstrap', url: 'https://raw.githubusercontent.com/fishstrap/fishstrap/refs/heads/main/LICENSE' },
+  { name: 'Bloxstrap', url: 'https://raw.githubusercontent.com/bloxstraplabs/bloxstrap/refs/heads/main/LICENSE' },
+  { name: 'AvalonEdit', url: 'https://raw.githubusercontent.com/icsharpcode/AvalonEdit/master/LICENSE' },
+  { name: 'DiscordRichPresence', url: 'https://raw.githubusercontent.com/Lachee/discord-rpc-csharp/master/LICENSE' },
+  { name: 'Markdig', url: 'https://raw.githubusercontent.com/xoofx/markdig/master/license.txt' },
+  { name: 'ShellLink', url: 'https://raw.githubusercontent.com/securifybv/ShellLink/master/LICENSE.txt' },
+  { name: 'SharpVectors.Wpf', url: 'https://raw.githubusercontent.com/ElinamLLC/SharpVectors/master/License.txt' },
+  { name: 'SharpZipLib', url: 'https://raw.githubusercontent.com/icsharpcode/SharpZipLib/master/LICENSE.txt' },
+  { name: 'XamlAnimatedGif', url: 'https://raw.githubusercontent.com/XamlAnimatedGif/XamlAnimatedGif/master/LICENSE' },
+  { name: 'WpfUI', url: 'https://raw.githubusercontent.com/lepoco/wpfui/refs/heads/main/LICENSE' },
+];
+
+export const licenses = await Promise.all(
+  packages.map(async (pkg) => {
+    try {
+      const response = await fetch(pkg.url);
+      if (!response.ok) throw new Error('Failed to fetch');
+      const text = await response.text();
+      return { name: pkg.name, text };
+    } catch (error) {
+      return { name: pkg.name, text: `Error loading license: ${error.message}` };
+    }
+  })
+);
+
+{licenses.map(license => (
+  <div style="margin-bottom: 2rem;">
+    <h3>{license.name}</h3>
+    <Code code={license.text} lang="text" title='LICENSE' />
+  </div>
+))}

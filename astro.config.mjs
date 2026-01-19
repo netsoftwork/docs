@@ -37,6 +37,13 @@ export default defineConfig({
                         { label: 'Troubleshooting Fishstrap', slug: 'troubleshoot/fishstrap' },
                         { label: 'Troubleshooting Roblox', slug: 'troubleshoot/roblox' },
 					],
+                },
+                {
+					label: 'Legal',
+					items: [
+                        { label: 'License', slug: 'legal/license' },
+                        { label: 'Privacy Policy', slug: 'legal/privacy-policy' },
+					],
 				},
 			],
 		}),
