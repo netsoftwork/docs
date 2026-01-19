@@ -1,3 +1,10 @@
+/** font **/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+    font-family: 'Inter', sans-serif;
+}
+
 @layer base, starlight, theme, components, utilities;
 
 :root {
@@ -11,6 +18,7 @@
     
     --sl-color-text: #eeeeee;
     --sl-color-text-accent: #1a99dd;
+    --sl-color-black: #161616;
     
     /** REFERENCE, NOT ACTUALLY USED BY ANYTHING **/
     --color-astronaut-blue-50: #f1f8fe;
