@@ -12,11 +12,12 @@ To download the source code for the latest version of Fishstrap, follow the inst
 
 <Steps>
     1. Download &nbsp;<Icon size="14px" name="seti:git" class="inline-icon"/> [Git](https://git-scm.com/).
-    2. In the terminal, type in the following command to clone the repository:
+    2. Open a terminal window, and navigate to the directory where you want to download the source code to.
+    3. Type in the following command to clone the repository:
 
        <Code code="git clone https://github.com/fishstrap/fishstrap.git --recursive" title="pwsh" lang="bash" />
 </Steps>
-Git will automatically download the Fishstrap repository and place it in the current directory.
+Git will then download the Fishstrap repository and place it in the current directory.
 
 ---
 
@@ -40,7 +41,7 @@ You can use the dotnet command line utility to build the project:
 
 ---
 
-## Publishing
+## Publishing a binary
 To publish the Fishstrap binary, you have two options:
 
 ### Using &nbsp;<Icon size="22px" name="vscode" class="inline-icon"/> Visual Studio
@@ -58,4 +59,4 @@ To publish the Fishstrap binary, you have two options:
        <Code code="dotnet publish -p:PublishSingleFile=true -r win-x64 -c Release --self-contained false .\Bloxstrap\Bloxstrap.csproj" title="pwsh" lang="bash" />
 </Steps>
 
-You will find the resulting binary under `\bin\release\net6.0-windows\publish\win-x64`.
+You will find the resulting binary under `fishstrap\Bloxstrap\bin\release\net6.0-windows\publish\win-x64`.
